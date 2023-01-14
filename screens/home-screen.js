@@ -1,6 +1,5 @@
 import * as React from "react";
 import {
-  Button,
   View,
   Text,
   StyleSheet,
@@ -10,16 +9,11 @@ import {
 import { StatusBar } from "expo-status-bar";
 
 const Space = () => <View style={{ marginVertical: 10 }} />;
-
-const image = {
-  uri: "http://www.ayurvedicpharmacompanies.com/wp-content/uploads/2019/07/Top-Ayurvedic-Medicine-Exporters-in-India.jpg",
-};
-
 export default function HomeScreen({ navigation }) {
   return (
     <View style={styles.container}>
       <StatusBar style="auto" />
-      <ImageBackground source={image} resizeMode="cover" style={styles.image}>
+      <ImageBackground source={require('../assets/Home.jpg')} resizeMode="cover" style={styles.image}>
         <View style={{ marginVertical: 5 }} />
         <Pressable
           style={styles.button}
